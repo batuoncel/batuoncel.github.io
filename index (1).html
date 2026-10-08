@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batu Öncel | Mechanical Engineering & Business Student</title>
+<meta name="description" content="Portfolio of Batu Öncel, mechanical engineering and business student with 4 years of import/export experience in measuring instruments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6F8; --ink:#14283C; --steel:#5B6B7C; --line:#C9D2DB; --card:#FFFFFF; --mark:#E8590C;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#0F1B28; --ink:#E8EEF4; --steel:#9AABBB; --line:#2B3E52; --card:#16283A; --mark:#FF8A4C; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{padding:18px 0;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+nav a{text-decoration:none;color:var(--steel)}
+nav a:hover{color:var(--ink)}
+
+/* Hero: a measuring scale is the one memorable element */
+.hero{padding:72px 0 0}
+.hero h1{font-size:clamp(3rem,11vw,6.5rem);font-weight:800;letter-spacing:-.03em}
+.hero p.role{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--steel);margin:14px 0 26px;max-width:30ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
+.btn{display:inline-block;padding:11px 20px;border:2px solid var(--ink);text-decoration:none;font-weight:500;border-radius:3px}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--mark)}
+.scale{height:34px;border-bottom:2px solid var(--ink);
+  background:
+   repeating-linear-gradient(90deg,var(--ink) 0 1.5px,transparent 1.5px 100px) bottom/100px 34px repeat-x,
+   repeating-linear-gradient(90deg,var(--steel) 0 1px,transparent 1px 50px) bottom/50px 22px repeat-x,
+   repeating-linear-gradient(90deg,var(--steel) 0 1px,transparent 1px 10px) bottom/10px 11px repeat-x}
+
+section{padding:64px 0 8px}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:800;margin-bottom:22px}
+.entry{display:grid;grid-template-columns:150px 1fr;gap:6px 28px;padding:16px 0;border-top:1px solid var(--line)}
+.entry .when{color:var(--steel);font-size:15px}
+.entry h3{font-size:1.2rem;font-weight:600}
+.entry p{margin:4px 0 0;color:var(--steel)}
+.entry ul{margin:10px 0 0;padding-left:20px}
+.entry li{margin-bottom:6px}
+@media(max-width:620px){.entry{grid-template-columns:1fr}}
+
+/* Projects */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.project{background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.media{aspect-ratio:16/10;background:var(--line);position:relative;display:flex;align-items:center;justify-content:center;color:var(--steel);font-size:14px}
+.media img,.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.project .body{padding:16px 18px 20px}
+.project h3{font-size:1.15rem;font-weight:600}
+.project p{margin:6px 0 10px;color:var(--steel);font-size:15px}
+.thumbs{display:flex;gap:8px;margin:0 0 12px}.thumbs img{width:64px;height:64px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
+.tags{font-size:13px;color:var(--steel)}
+.tags span{border:1px solid var(--line);padding:2px 8px;margin-right:6px;display:inline-block;margin-bottom:4px;border-radius:2px}
+
+.skills dt{font-weight:500;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--steel)}
+footer{margin-top:72px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--steel);font-size:15px}
+.contact a{display:inline-block;margin-right:20px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main"><div class="wrap">
+  <a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a>
+  <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Batu Öncel</h1>
+    <p class="role">Mechanical Engineering &amp; Business student, Izmir, Turkey</p>
+    <div class="btns">
+      <a class="btn primary" href="Batu_Oncel_CV_ATS.pdf" download>Download CV (PDF)</a>
+      <a class="btn" href="#projects">See projects</a>
+    </div>
+  </div>
+  <div class="scale" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+
+<section id="about">
+  <h2>About</h2>
+  <p>I study mechanical engineering and business administration at the same time. For four years I ran an import/export company for measuring instruments, so I work comfortably with both technical design and international trade. I use CAD and simulation tools such as AutoCAD, MATLAB, Simulink, and PVsyst.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="when">2021 – Present</div>
+    <div><h3>B.Sc. Mechanical Engineering</h3><p>Yaşar University, Izmir</p></div>
+  </div>
+  <div class="entry">
+    <div class="when">2025 – Present</div>
+    <div><h3>B.A. Business Administration</h3><p>Anadolu University</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="when">Jan 2022 – Feb 2026<br>Izmir (Hybrid)</div>
+    <div>
+      <h3>Founder &amp; Business Owner</h3>
+      <p>ÖNCEL ÖLÇÜ ALETLERİ İTH. İHR. SAN. VE TİC. A.Ş.</p>
+      <ul>
+        <li>Managed import and export operations for a measuring instruments company.</li>
+        <li>Handled B2B communication with suppliers and customers.</li>
+        <li>Coordinated supply chain and business management tasks.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <!-- Replace each card with your own work. Put files in the assets/ folder. -->
+  <div class="grid">
+
+    <article class="project">
+      <div class="media">
+        <img src="assets/railway-case.jpg" alt="Railway profile gauges in a protective case with foam cutouts" loading="lazy">
+      </div>
+      <div class="body">
+        <h3>Railway profile gauges: import, calibration and tender sale</h3>
+        <p>Sourced 49E1 and 60E1 rail profile gauges from China, added branding and serial numbers, calibrated each unit, and supplied them in a custom foam-cut case. Sold through an e-tender in Turkey.</p>
+        <div class="thumbs">
+          <a href="assets/railway-gauges-set.jpg"><img src="assets/railway-gauges-set.jpg" alt="Rail profile gauge set" loading="lazy"></a>
+          <a href="assets/railway-foot-end-gauge.jpg"><img src="assets/railway-foot-end-gauge.jpg" alt="60E1 foot-end gauge" loading="lazy"></a>
+          <a href="assets/railway-fishing-height-gauge.jpg"><img src="assets/railway-fishing-height-gauge.jpg" alt="49E1 fishing height gauge" loading="lazy"></a>
+        </div>
+        <div class="tags"><span>Import</span><span>Calibration</span><span>Metrology</span><span>E-Tender</span><span>Railway</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="media">Add video: assets/project-2.mp4
+        <video controls preload="metadata" poster="assets/project-2-poster.jpg" onerror="this.remove()">
+          <source src="assets/project-2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="body">
+        <h3>Project title two</h3>
+        <p>Short description of the simulation or animation shown in the video.</p>
+        <div class="tags"><span>MATLAB</span><span>Simulink</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="media">Add image: assets/project-3.jpg
+        <img src="assets/project-3.jpg" alt="Describe the project image here" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>Project title three</h3>
+        <p>Describe the result, such as an energy yield analysis or a render.</p>
+        <div class="tags"><span>PVsyst</span><span>Blender</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>CAD and design</dt><dd>AutoCAD, 3D CAD, Blender</dd>
+    <dt>Engineering simulation</dt><dd>MATLAB, Simulink, PVsyst</dd>
+    <dt>Business</dt><dd>Import/Export Operations, B2B Communication, Business &amp; Supply Chain Management</dd>
+    <dt>Languages</dt><dd>English, Turkish (native)</dd>
+  </dl>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap contact">
+    <a href="mailto:batuonc@gmail.com">batuonc@gmail.com</a>
+    <a href="tel:+905412739072">+90 541 273 90 72</a>
+    <a href="https://www.linkedin.com/in/batu-öncel-batuoncel/">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
