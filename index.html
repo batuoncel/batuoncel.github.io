@@ -84,6 +84,14 @@ section.alt .card{background:var(--bg)}
 .media-row img,.media-row video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-shot{aspect-ratio:16/9;background:var(--line)}
 .hero-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.media-row.two{grid-template-columns:repeat(2,1fr)}
+.media-row.two figure{background:#fff;aspect-ratio:4/3;align-items:center}
+.media-row.two img{object-fit:contain;padding:10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 24px}
+.stat{background:var(--bg);border-radius:20px;padding:18px 18px 16px}
+.stat b{display:block;font-size:1.6rem;letter-spacing:-.03em;line-height:1.1;margin-bottom:4px}
+.stat span{color:var(--sub);font-size:13px}
+.project p sub{font-size:.75em}
 .thumbs{display:flex;gap:10px;margin:0 0 20px}
 .thumbs img{width:76px;height:76px;object-fit:cover;border-radius:14px;display:block;background:var(--line)}
 .phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin:8px 0 24px}
@@ -107,8 +115,9 @@ section.alt .card{background:var(--bg)}
   .project{border-radius:24px}
   .project .body{padding:24px 22px 28px}
   .hero-shot{aspect-ratio:4/3}
-  .media-row.three{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:6px;background:var(--alt);padding:0 0 0 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .media-row.three::-webkit-scrollbar{display:none}
+  .media-row.two,.media-row.three{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:6px;background:var(--alt);padding:0 0 0 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .media-row.two::-webkit-scrollbar,.media-row.three::-webkit-scrollbar{display:none}
+  .media-row.two figure{flex:0 0 88%;aspect-ratio:4/3;scroll-snap-align:center}
   .media-row.three figure{flex:0 0 74%;aspect-ratio:3/4;scroll-snap-align:center;border-radius:0}
   .media-row.three figure:first-child{scroll-snap-align:start}
   .phases{grid-template-columns:1fr;gap:20px}
@@ -217,6 +226,24 @@ footer .links{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;font-s
       </article>
 
       <article class="project">
+        <div class="media-row two">
+          <figure><img src="solar-layout.jpg" alt="3D model of the house roof with 24 solar modules arranged in two tilted table groups" loading="lazy"></figure>
+          <figure><img src="solar-production.jpg" alt="Chart of simulated monthly solar energy production per installed kWp" loading="lazy"></figure>
+        </div>
+        <div class="body">
+          <h3>Rooftop solar PV design study for my own home</h3>
+          <p>Designed and simulated a grid-connected rooftop PV system in PVsyst. The layout uses 24 modules of 595 Wp in two table groups with a 10 kW inverter, and includes horizon and near-shading analysis, a loss diagram, a cost model, a financial analysis, and a CO<sub>2</sub> balance. All figures are simulated, not measured.</p>
+          <div class="stats">
+            <div class="stat"><b>14.28 kWp</b><span>System size</span></div>
+            <div class="stat"><b>21.2 MWh</b><span>Simulated yearly output</span></div>
+            <div class="stat"><b>83.4%</b><span>Performance ratio</span></div>
+            <div class="stat"><b>3.4 years</b><span>Estimated payback</span></div>
+          </div>
+          <div class="tags"><span>PVsyst</span><span>Solar PV</span><span>Energy Yield</span><span>Shading Analysis</span><span>Financial Analysis</span><span>CO2 Balance</span></div>
+        </div>
+      </article>
+
+      <article class="project">
         <div class="media-row three">
           <figure><img src="fll-award.jpg" alt="FIRST LEGO League trophy with plaque: 15th season Izmir 2nd local tournament, Strategy and Innovation Award" loading="lazy"></figure>
           <figure><video controls muted playsinline preload="metadata" poster="fll-run-2-poster.jpg" aria-label="Our LEGO EV3 robot in action, second video"><source src="fll-run-2.mp4" type="video/mp4"></video></figure>
@@ -275,10 +302,10 @@ footer .links{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;font-s
   <div class="wrap">
     <h2>Skills</h2>
     <div class="skills">
-      <div class="card"><h3>CAD and design</h3><p>AutoCAD, 3D CAD, Blender</p></div>
+      <div class="card"><h3>CAD and design</h3><p>AutoCAD, 3D CAD</p></div>
       <div class="card"><h3>Engineering simulation</h3><p>MATLAB, Simulink, PVsyst</p></div>
       <div class="card"><h3>Business</h3><p>Import/Export Operations, B2B Communication, Business &amp; Supply Chain Management</p></div>
-      <div class="card"><h3>Languages</h3><p>Turkish (native), English (C1)</p></div>
+      <div class="card"><h3>Languages</h3><p>Turkish (native), English (B2)</p></div>
     </div>
   </div>
 </section>
