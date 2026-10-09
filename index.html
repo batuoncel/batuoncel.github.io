@@ -59,6 +59,15 @@ h2{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:800;margin-bottom:22px}
 .project .body{padding:16px 18px 20px}
 .project h3{font-size:1.15rem;font-weight:600}
 .project p{margin:6px 0 10px;color:var(--steel);font-size:15px}
+.project.wide{grid-column:1/-1}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;background:var(--line)}
+.trio figure{margin:0;background:#000;aspect-ratio:3/4;display:flex}
+.trio img,.trio video{width:100%;height:100%;object-fit:cover;display:block}
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px 28px;margin:14px 0 12px}
+.phases h4{margin:0 0 6px;font-family:"Bricolage Grotesque",sans-serif;font-size:1rem}
+.phases ol{margin:0;padding-left:22px;font-size:15px;color:var(--steel)}
+.phases li{margin-bottom:4px}
+.project a{color:var(--ink);text-underline-offset:3px}
 .thumbs{display:flex;gap:8px;margin:0 0 12px}.thumbs img{width:64px;height:64px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .tags{font-size:13px;color:var(--steel)}
 .tags span{border:1px solid var(--line);padding:2px 8px;margin-right:6px;display:inline-block;margin-bottom:4px;border-radius:2px}
@@ -126,46 +135,72 @@ footer{margin-top:72px;padding:28px 0 48px;border-top:1px solid var(--line);colo
 
 <section id="projects">
   <h2>Projects</h2>
-  <!-- Replace each card with your own work. Put files in the assets/ folder. -->
   <div class="grid">
 
     <article class="project">
       <div class="media">
-        <img src="assets/railway-case.jpg" alt="Railway profile gauges in a protective case with foam cutouts" loading="lazy">
+        <img src="railway-case.jpg" alt="Railway profile gauges in a protective case with foam cutouts" loading="lazy">
       </div>
       <div class="body">
         <h3>Railway profile gauges: import, calibration and tender sale</h3>
         <p>Sourced 49E1 and 60E1 rail profile gauges from China, added branding and serial numbers, calibrated each unit, and supplied them in a custom foam-cut case. Sold through an e-tender in Turkey.</p>
         <div class="thumbs">
-          <a href="assets/railway-gauges-set.jpg"><img src="assets/railway-gauges-set.jpg" alt="Rail profile gauge set" loading="lazy"></a>
-          <a href="assets/railway-foot-end-gauge.jpg"><img src="assets/railway-foot-end-gauge.jpg" alt="60E1 foot-end gauge" loading="lazy"></a>
-          <a href="assets/railway-fishing-height-gauge.jpg"><img src="assets/railway-fishing-height-gauge.jpg" alt="49E1 fishing height gauge" loading="lazy"></a>
+          <a href="railway-gauges-set.jpg"><img src="railway-gauges-set.jpg" alt="Rail profile gauge set" loading="lazy"></a>
+          <a href="railway-foot-end-gauge.jpg"><img src="railway-foot-end-gauge.jpg" alt="60E1 foot-end gauge" loading="lazy"></a>
+          <a href="railway-fishing-height-gauge.jpg"><img src="railway-fishing-height-gauge.jpg" alt="49E1 fishing height gauge" loading="lazy"></a>
         </div>
         <div class="tags"><span>Import</span><span>Calibration</span><span>Metrology</span><span>E-Tender</span><span>Railway</span></div>
       </div>
     </article>
 
-    <article class="project">
-      <div class="media">Add video: assets/project-2.mp4
-        <video controls preload="metadata" poster="assets/project-2-poster.jpg" onerror="this.remove()">
-          <source src="assets/project-2.mp4" type="video/mp4">
-        </video>
+    <article class="project wide">
+      <div class="trio">
+        <figure><img src="fll-award.jpg" alt="FIRST LEGO League trophy with plaque: 15th season Izmir 2nd local tournament, Strategy and Innovation Award" loading="lazy"></figure>
+        <figure><video controls preload="metadata" poster="fll-run-1-poster.jpg" aria-label="Robot run on the Into Orbit mission mat"><source src="fll-run-1.mp4" type="video/mp4"></video></figure>
+        <figure><video controls preload="metadata" poster="fll-run-2-poster.jpg" aria-label="Second robot run on the Into Orbit mission mat"><source src="fll-run-2.mp4" type="video/mp4"></video></figure>
       </div>
       <div class="body">
-        <h3>Project title two</h3>
-        <p>Short description of the simulation or animation shown in the video.</p>
-        <div class="tags"><span>MATLAB</span><span>Simulink</span></div>
+        <h3>FIRST LEGO League Into Orbit: Strategy and Innovation Award</h3>
+        <p>Competed in the 15th season of FIRST LEGO League (Into Orbit) and won the Strategy and Innovation Award at the Izmir 2nd local tournament, February 2019. The videos show our LEGO EV3 robot running the mission mat.</p>
+        <div class="tags"><span>FIRST LEGO League</span><span>LEGO EV3</span><span>Robotics</span><span>Teamwork</span><span>Innovation</span></div>
       </div>
     </article>
 
-    <article class="project">
-      <div class="media">Add image: assets/project-3.jpg
-        <img src="assets/project-3.jpg" alt="Describe the project image here" loading="lazy" onerror="this.remove()">
-      </div>
+    <article class="project wide">
       <div class="body">
-        <h3>Project title three</h3>
-        <p>Describe the result, such as an energy yield analysis or a render.</p>
-        <div class="tags"><span>PVsyst</span><span>Blender</span></div>
+        <h3>Project management: security system installation bid plan</h3>
+        <p>Built a work breakdown structure and schedule in Microsoft Project for preparing a bid to install a security system. The plan runs from the approval to bid to the submitted bid document, in three work packages.</p>
+        <div class="phases">
+          <div>
+            <h4>Technical specification</h4>
+            <ol>
+              <li>Determine installation requirements</li>
+              <li>Create technical specification</li>
+              <li>Identify supplier components</li>
+              <li>Validate technical specification</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Delivery plan</h4>
+            <ol start="5">
+              <li>Document delivery methodology</li>
+              <li>Obtain quotes from suppliers</li>
+              <li>Calculate the bid estimate</li>
+              <li>Create the project schedule</li>
+              <li>Review the delivery plan</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Bid document</h4>
+            <ol start="10">
+              <li>Create draft of bid document</li>
+              <li>Review bid document</li>
+              <li>Finalize and submit bid document</li>
+            </ol>
+          </div>
+        </div>
+        <p><a href="bid-project-plan.mpp" download>Download the Microsoft Project file (.mpp)</a></p>
+        <div class="tags"><span>Microsoft Project</span><span>Work Breakdown Structure</span><span>Scheduling</span><span>Bid Management</span></div>
       </div>
     </article>
 
