@@ -31,6 +31,9 @@ nav a:hover{color:var(--ink)}
 .hero{padding:72px 0 0}
 .hero h1{font-size:clamp(3rem,11vw,6.5rem);font-weight:800;letter-spacing:-.03em}
 .hero p.role{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--steel);margin:14px 0 26px;max-width:30ch}
+.herogrid{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+.portrait{width:220px;height:auto;aspect-ratio:220/283;object-fit:cover;border-radius:3px;border:1px solid var(--line);margin-bottom:56px;display:block}
+@media(max-width:700px){.herogrid{flex-direction:column;align-items:flex-start}.portrait{width:160px;margin-bottom:40px;order:-1}}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
 .btn{display:inline-block;padding:11px 20px;border:2px solid var(--ink);text-decoration:none;font-weight:500;border-radius:3px}
 .btn.primary{background:var(--ink);color:var(--paper)}
@@ -87,13 +90,16 @@ footer{margin-top:72px;padding:28px 0 48px;border-top:1px solid var(--line);colo
 </div></nav>
 
 <header class="hero">
-  <div class="wrap">
-    <h1>Batu Öncel</h1>
-    <p class="role">Mechanical Engineering &amp; Business student, Izmir, Turkey</p>
-    <div class="btns">
-      <a class="btn primary" href="Batu_Oncel_CV_ATS.pdf" download>Download CV (PDF)</a>
-      <a class="btn" href="#projects">See projects</a>
+  <div class="wrap herogrid">
+    <div>
+      <h1>Batu Öncel</h1>
+      <p class="role">Mechanical Engineering &amp; Business student, Izmir, Turkey</p>
+      <div class="btns">
+        <a class="btn primary" href="Batu_Oncel_CV_ATS.pdf" download>Download CV (PDF)</a>
+        <a class="btn" href="#projects">See projects</a>
+      </div>
     </div>
+    <img class="portrait" src="batu-portrait.jpg" alt="Portrait of Batu Öncel" width="220" height="283">
   </div>
   <div class="scale" aria-hidden="true"></div>
 </header>
