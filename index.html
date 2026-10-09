@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
 <title>Batu Öncel | Mechanical Engineering & Business Student</title>
 <meta name="description" content="Portfolio of Batu Öncel, mechanical engineering and business student with 4 years of import/export experience in measuring instruments.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +13,8 @@
 <style>
 :root{
   --bg:#ffffff; --alt:#f5f5f7; --ink:#1d1d1f; --sub:#6e6e73; --line:#d2d2d7; --blue:#0071e3; --blue-hover:#0077ed;
-  --nav:rgba(255,255,255,.8);
+  --nav:rgba(255,255,255,.8); color-scheme:light;
   --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#000000; --alt:#161617; --ink:#f5f5f7; --sub:#a1a1a6; --line:#424245; --blue:#2997ff; --blue-hover:#4aa9ff; --nav:rgba(22,22,23,.8); }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -34,7 +33,13 @@ nav .brand:hover{text-decoration:none}
 nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:12px}
 nav ul a{color:var(--ink);opacity:.8}
 nav ul a:hover{opacity:1;text-decoration:none}
-@media(max-width:700px){nav ul{gap:14px}nav .brand{display:none}nav .wrap{justify-content:center}}
+@media(max-width:700px){
+  nav .brand{display:none}
+  nav .wrap{padding:0}
+  nav ul{gap:22px;overflow-x:auto;scrollbar-width:none;padding:0 22px;width:100%;font-size:13px;-webkit-overflow-scrolling:touch}
+  nav ul::-webkit-scrollbar{display:none}
+  nav ul li{white-space:nowrap}
+}
 
 /* Hero */
 .hero{text-align:center;padding:72px 0 88px}
@@ -88,10 +93,27 @@ section.alt .card{background:var(--bg)}
 .link{display:inline-block;margin-bottom:22px}
 .link::after{content:" \203A"}
 @media(max-width:700px){
-  .project .body{padding:28px 24px 32px}
-  .media-row.three{grid-template-columns:1fr}
-  .media-row figure{aspect-ratio:4/3}
-  .card{padding:28px 24px}
+  section{padding:64px 0}
+  h2{margin-bottom:8px}
+  .hero{padding:40px 0 56px}
+  .portrait{width:132px;height:132px;margin-bottom:22px}
+  .hero .role{margin:12px auto 26px}
+  .actions{flex-direction:column;gap:14px}
+  .pill{padding:14px 34px}
+  .section-sub{margin-bottom:28px}
+  .cards,.projects,.skills{margin-top:32px;gap:14px}
+  .card{padding:26px 22px;border-radius:24px}
+  .card h3{font-size:1.3rem}
+  .project{border-radius:24px}
+  .project .body{padding:24px 22px 28px}
+  .hero-shot{aspect-ratio:4/3}
+  .media-row.three{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:6px;background:var(--alt);padding:0 0 0 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .media-row.three::-webkit-scrollbar{display:none}
+  .media-row.three figure{flex:0 0 74%;aspect-ratio:3/4;scroll-snap-align:center;border-radius:0}
+  .media-row.three figure:first-child{scroll-snap-align:start}
+  .phases{grid-template-columns:1fr;gap:20px}
+  footer{padding:44px 0 56px}
+  footer .links{flex-direction:column;gap:10px;font-size:17px}
 }
 
 /* Skills */
